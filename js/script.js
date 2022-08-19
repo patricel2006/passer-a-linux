@@ -4,7 +4,7 @@ $(function () {
     console.log("coucou")
 
 
-/************************************gestion des animations*****************************/
+    /************************************gestion des animations*****************************/
 
 
     function deplacementTitre() {
@@ -19,12 +19,12 @@ $(function () {
     deplacementTitre();
 
     function deplacementLogo() {
-        $('#imageTux')
-            .animate({ left: '100px' }, 1000, 'linear', function () { $(this).css('transform', 'rotateZ(180deg)') })
-            .animate({ top: '100px' }, 1000, 'linear', function () { $(this).css('transform', 'rotateZ(0)') })
-            .animate({ left: '10px' }, 1000, 'linear', function () { $(this).css('transform', 'rotateZ(30deg)') })
+        $('#logo')
+            .animate({ left: '1px' }, 1000, 'linear', function () { $(this).css('transform', 'rotateZ(180deg)') })
+            .animate({ top: '1px' }, 1000, 'linear', function () { $(this).css('transform', 'rotateZ(0)') })
+            .animate({ left: '1px' }, 1000, 'linear', function () { $(this).css('transform', 'rotateZ(30deg)') })
             .animate({ top: '' }, 500, 'linear', function () { $(this).css('transform', 'rotateZ(-30deg)') })
-            .animate({ top: '+=100px' }, 500, 'linear', function () { $(this).css('transform', 'rotateZ(0)') })
+            .animate({ top: '+=1px' }, 500, 'linear', function () { $(this).css('transform', 'rotateZ(0)') })
             .animate({ top: '' }, 1000, 'linear');
     }
 
@@ -62,8 +62,10 @@ $(function () {
         message = document.getElementById("message"),
         submit = document.querySelector("button[type='submit']"),
         form = document.querySelector("form")
-
+        
+    if (submit) {
     submit.addEventListener("click", checkForm)
+    }
 
     function checkForm(evt) {
         evt.preventDefault()

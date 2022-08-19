@@ -14,26 +14,34 @@
 
     <!-- bootstrap cdn -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    
+
     <!-- mon propre script -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header class="headerNav">
-        <div class="headerMenu">
-            <figure>
-                <img id="imageTux" src="images/tux-100.svg" alt="logo du site" title="linux-tux">
-            </figure>
-            <nav class="navbar navbar navbar-expand-lg navbar-dark bg-dark">
-                <h1 id="titreSite">Passer à linux !</h1>
-            </nav>
-        </div>
-        <div id="lienNavBar">
-            <a href="index.html">ACCUEIL</a>
-            <a href="contact.php">CONTACT</a>
-            <a href="#">S'INSCRIRE</a>
-            <a href="#">SE CONNECTER</a>
+    <header>
+        <div id="hamburger">
+            <div id="hamburger-content">
+                <h1 id="titreSite">Passer à Linux</h1>
+                <figure>
+                    <img id="logo" src="images/tux-100.svg" alt="logo du site" title="linux-tux" />
+                </figure>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">ACCUEIL</a></li>
+                        <li><a href="contact.php">CONTACT</a></li>
+                        <li><a href="#">S'INSCRIRE</a></li>
+                        <li><a href="#">SE CONNECTER</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <button id="hamburger-button">&#9776;</button>
+            <div id="hamburger-sidebar">
+                <div id="hamburger-sidebar-header"></div>
+                <div id="hamburger-sidebar-body"></div>
+            </div>
+            <div id="hamburger-overlay"></div>
         </div>
     </header>
 
