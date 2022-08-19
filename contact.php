@@ -65,7 +65,7 @@
                 <div class="alert alert-danger d-none" role="alert"></div>
 
                 <label for="message">Votre message</label>
-                <textarea type="text" name="message" id="message" cols="30" rows="10 class=" form-control"></textarea>
+                <textarea name="message" id="message" cols="30" rows="10" class="form-control"></textarea>
                 <div class="alert alert-danger d-none" role="alert"></div>
 
                 <button type="submit" class="btn btn-primary m-2">Envoyer</button>
@@ -77,9 +77,11 @@
             <?php
 
             $retour = mail("ranx2019@laposte.net", "essai", "coucou les amis !", "");
+
             if ($retour) {
                 echo "<p>L'email du formulaire a bien été envoyé.</p>";
             }
+
             ?>
         </div>
 
@@ -87,7 +89,7 @@
 
         <footer>
             <div class="footer">
-                <p class="text-center">&copy 2022 - Passer à Linux -</p>
+                <p class="text-center">&copy; 2022 - Passer à Linux -</p>
             </div>
         </footer>
     </div>
