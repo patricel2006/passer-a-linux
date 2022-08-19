@@ -7,14 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>formulaire de contact</title>
 
-        <!-- google fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
-<!-- bootstrap cdn -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <!-- mon propre script -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -29,7 +30,7 @@
             </nav>
         </div>
         <div id="lienNavBar">
-            <a href="index.html">monsite </a>
+            <a href="index.html">ACCUEIL</a>
             <a href="contact.php">CONTACT</a>
             <a href="#">S'INSCRIRE</a>
             <a href="#">SE CONNECTER</a>
@@ -63,19 +64,19 @@
                 <input type="reset" class="btn btn-warning m-2" value="Effacer">
             </form>
 
-        <!-- code php de traitement du formulaire -->
+            <!-- code php de traitement du formulaire -->
 
-        <?php
+            <?php
 
-        $retour = mail("patrice.lepic@outlook.com", "essai", "coucou les amis !", "");
-        if ($retour) {
-            echo "<p>L'email du formulaire a bien été envoyé.</p>";
-        }
-        ?>
+            $retour = mail("ranx2019@laposte.net", "essai", "coucou les amis !", "");
+            if ($retour) {
+                echo "<p>L'email du formulaire a bien été envoyé.</p>";
+            }
+            ?>
         </div>
 
         <!-- footer------------------------------------------------------->
-        
+
         <footer>
             <div class="footer">
                 <p class="text-center">&copy 2022 - Passer à Linux -</p>
@@ -83,9 +84,7 @@
         </footer>
     </div>
     <!-- CDN Bundle Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
     <!-- lien vers jquery------------------------------------->
     <script src="jquery-3.6.0.min.js"></script>
