@@ -51,7 +51,7 @@
             <h1 id="formulaireContact" class="text-center">Formulaire de contact</h1>
             <h4>Pour toute demande d'installation, veuillez remplir le formulaire de contact. Merci et à bientôt.</h4>
             <hr>
-            <form action="#" class="form-control">
+            <form method="post" action="test.php" class="form-control">
                 <label for="nom">Votre nom</label>
                 <input type="text" name="nom" id="nom" class="form-control">
                 <div class="alert alert-danger d-none" role="alert"></div>
@@ -61,7 +61,7 @@
                 <div class="alert alert-danger d-none" role="alert"></div>
 
                 <label for="email">Votre email</label>
-                <input type="text" name="email" id="email" class="form-control">
+                <input type="email" name="email" id="email" class="form-control">
                 <div class="alert alert-danger d-none" role="alert"></div>
 
                 <label for="message">Votre message</label>
@@ -72,17 +72,28 @@
                 <input type="reset" class="btn btn-warning m-2" value="Effacer">
             </form>
 
-            <!-- code php de traitement du formulaire -->
+            <!-- code php de traitement du formulaire 
 
             <?php
+            /*********************************************************************************************** 
 
-            $retour = mail("ranx2019@laposte.net", "essai", "coucou les amis !", "");
+            use PHPMailer\PHPMailer\PHPMailer;
+            use PHPMailer\PHPMailer\Exception;
+
+            require 'vendor/phpmailer/phpmailer/src/Exception.php';
+            require 'vendor/phpmailer/phpmailer/src/PHPMailer.php';
+            require 'vendor/phpmailer/phpmailer/src/SMTP.php';
+
+            $retour = mail("contact@passer-a-linux.com", "essai", "coucou les amis !", "contact@passer-a-linux.com");
 
             if ($retour) {
-                echo "<p>L'email du formulaire a bien été envoyé.</p>";
+                echo "<p>Merci ! Les données du formulaire ont bien été envoyées.</p>";
             }
+             
+            **************************************************************************************************/
+            ?> 
 
-            ?>
+        ----------------------------------------------------------->
         </div>
 
         <!-- footer------------------------------------------------------->
@@ -98,6 +109,7 @@
 
     <!-- lien vers jquery------------------------------------->
     <script src="jquery-3.6.0.min.js"></script>
+
     <!-- lien vers mon script js -->
     <script src="js/script.js"></script>
 </body>

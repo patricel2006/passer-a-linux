@@ -62,9 +62,9 @@ $(function () {
         message = document.getElementById("message"),
         submit = document.querySelector("button[type='submit']"),
         form = document.querySelector("form")
-        
+
     if (submit) {
-    submit.addEventListener("click", checkForm)
+        submit.addEventListener("click", checkForm)
     }
 
     function checkForm(evt) {

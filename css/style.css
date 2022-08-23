@@ -120,6 +120,8 @@ section {
     padding-inline: 10px;
 }
 
+/***********************ecrans inferieurs à 992px - menu burger - *******************/
+
 @media screen and (max-width:992px) {
     header {
         background: red;
@@ -148,7 +150,7 @@ section {
     }
 }
 
-
+/************************************fin du header**********************************/
 
 #titreSite {
     color: orange;
